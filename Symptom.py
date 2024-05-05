@@ -42,7 +42,7 @@ def Symptoms(a, b, d, e):
        'Urinary tract infection', 'Psoriasis', 'Impetigo']
 
     # Read the training data
-    df_train = pd.read_csv("training.csv")
+    df_train = pd.read_csv("Training.csv")
     df_train.replace({'prognosis': {disease[i]: i for i in range(len(disease))}}, inplace=True)
     
     # Prepare X_train and y_train
@@ -71,7 +71,7 @@ def Symptoms(a, b, d, e):
     conn.close()
 
     # Read the testing data
-    df_test = pd.read_csv("testing.csv")
+    df_test = pd.read_csv("Testing.csv")
     df_test.replace({'prognosis': {disease[i]: i for i in range(len(disease))}}, inplace=True)
 
     # Prepare X_test and y_test
