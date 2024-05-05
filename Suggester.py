@@ -6,7 +6,7 @@ def Suggesters(input):
  user_input = input
 
  # Open the CSV file
- with open('Remedies.csv', 'r', newline='') as file:
+ with open('Remedies.csv', 'r') as file:
     # Create a CSV reader
     reader = csv.reader(file)
     rows = list(reader)
